@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TestAllegro2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TestAllegro2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../allegro5/include/allegro5" />
+					<Add directory="../../allegro5/addons/image/allegro5" />
+					<Add directory="../../allegro5/addons/primitives/allegro5" />
+				</Compiler>
+				<Linker>
+					<Add library="../../allegro5/build/lib/liballegro.so" />
+					<Add library="../../allegro5/build/lib/liballegro_acodec.so" />
+					<Add library="../../allegro5/build/lib/liballegro_audio.so" />
+					<Add library="../../allegro5/build/lib/liballegro_color.so" />
+					<Add library="../../allegro5/build/lib/liballegro_font.so" />
+					<Add library="../../allegro5/build/lib/liballegro_image.so" />
+					<Add library="../../allegro5/build/lib/liballegro_main.so" />
+					<Add library="../../allegro5/build/lib/liballegro_memfile.so" />
+					<Add library="../../allegro5/build/lib/liballegro_primitives.so" />
+					<Add library="../../allegro5/build/lib/liballegro_ttf.so" />
+					<Add directory="../../allegro5/build/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TestAllegro2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
